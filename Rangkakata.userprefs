@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/App.xaml">
+    <Files>
+      <File FileName="Rangkakata/App.xaml" Line="7" Column="1" />
+      <File FileName="Rangkakata/App.xaml.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.509EFE85-736B-418E-BFDE-BFD263BCBC56">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.Rangkakata.iOS>
+  <MultiItemStartupConfigurations />
+</Properties>
