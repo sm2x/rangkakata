@@ -1,15 +1,16 @@
-﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{06591581-D1AA-4ED1-81C2-0FB7208AF4B5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/MainActivity.cs">
     <Files>
       <File FileName="iOS/Info.plist" />
+      <File FileName="Droid/MainActivity.cs" Line="13" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.509EFE85-736B-418E-BFDE-BFD263BCBC56" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.9ecdf392f5229b1544414a9af823a2f930b3c106" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Rangkakata.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>
