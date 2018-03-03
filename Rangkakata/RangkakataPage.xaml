@@ -3,19 +3,131 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:Rangkakata" 
+    xmlns:Controls="clr-namespace:Rangkakata.Controls;assembly=Rangkakata"
+    xmlns:ImageCircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="Rangkakata.RangkakataPage"
     BackgroundImage="bourbon.jpg">
 
     <ScrollView>
 
-        <Grid>
+        <ScrollView
+            Padding="0"
+            Orientation="Vertical">
+            
+            <Grid>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="50" />
-            </Grid.RowDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="70" />
+                </Grid.RowDefinitions>
 
-        </Grid>
+                <Image
+                    Grid.Row="0"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    Source="logo.png">
+                    <Image.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="iOS" Value="0, 30, 0, 0" />
+                            <On Platform="Android" Value="10" />
+                        </OnPlatform>
+                    </Image.Margin>
+                </Image>
+
+                <Frame
+                    Grid.Row="1"
+                    Margin="20"
+                    OutlineColor="#ecf0f1"
+                    Padding="0"
+                    HasShadow="false">
+                    
+                    <Grid
+                        RowSpacing="0"
+                        ColumnSpacing="0">
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Text="Departure"
+                            FontSize="Small"
+                            Margin="15"
+                            FontAttributes="Bold"/>
+
+                        <Controls:RanEntry
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            TextColor="Silver"
+                            Grid.ColumnSpan="3" />
+
+                        <BoxView
+                            Grid.Row="1"
+                            Grid.ColumnSpan="4"
+                            HeightRequest="1"
+                            BackgroundColor="#ecf0f1" />
+
+                        <Label
+                            Grid.Row="2"
+                            Text="Destination"
+                            FontSize="Small"
+                            Margin="15"
+                            FontAttributes="Bold"/>
+
+                        <Controls:RanEntry
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            TextColor="Silver"
+                            Grid.ColumnSpan="2" />
+
+                        <Button
+                            Grid.Row="2"
+                            Grid.Column="3"
+                            Margin="8"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="Small"
+                            BackgroundColor="#ecf0f1"
+                            WidthRequest="40"
+                            HeightRequest="30"
+                            BorderColor="Black"
+                            Text="GO" />
+                        
+                    </Grid>
+                </Frame>
+
+                <StackLayout
+                    Grid.Row="2">
+
+                    <ImageCircle:CircleImage
+                        Margin="30"
+                        Source="tzaneen-nkowankowa.png" 
+                        Aspect="AspectFit"
+                        BorderColor="Black"
+                        BorderThickness="10" />
+
+                </StackLayout>
+
+                <Image
+                    Grid.Row="3"
+                    Margin="30"
+                    Source="uparrow.png" />
+
+            </Grid>
+
+        </ScrollView>
 
     </ScrollView>
     
