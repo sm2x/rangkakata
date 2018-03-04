@@ -3,20 +3,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Rangkakata.Pages.MatchPage"
-    xmlns:Animations="clr-namespace:Xamanimation;assembly=Xamanimation"
     xmlns:ImageCircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     NavigationPage.HasNavigationBar="false"
     BackgroundImage="bourbon.jpg">
 
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Animations:FadeToAnimation
-                 x:Key="JumpAnimation"
-                 Target="{x:Reference DriverImage}"
-                 Duration="2000" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    
 	<ContentPage.Content>
 
         <Grid
@@ -36,7 +26,7 @@
                 x:Name="DriverImage"
                 HorizontalOptions="Center"
                 BorderThickness="3"
-                Margin="40,40,40,0"
+                Margin="40,60,40,0"
                 BorderColor="White"
                 Source="profile.png"
                 Aspect="AspectFit"

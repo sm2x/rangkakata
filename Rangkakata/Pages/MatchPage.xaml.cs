@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Rangkakata.ViewModels;
 using Rangkakata.ViewModels.Core;
+using Xamanimation;
 using Xamarin.Forms;
 
 namespace Rangkakata.Pages
@@ -12,6 +13,17 @@ namespace Rangkakata.Pages
         {
             ViewModel = new MatchPageViewModel(new PageService());
             InitializeComponent();
+
+            HeartBeat();
+
+            Device.StartTimer(TimeSpan.FromSeconds(3), HeartBeat);
+
+        }
+
+        bool HeartBeat()
+        {
+            DriverImage.Animate(new HeartAnimation());
+            return true;
         }
 
         public MatchPageViewModel ViewModel
