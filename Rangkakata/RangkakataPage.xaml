@@ -23,15 +23,28 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Frame
+            <ImageCircle:CircleImage
                 Grid.Row="0"
-                Margin="20,60,20,0"
+                HorizontalOptions="End"
+                BorderThickness="3"
+                WidthRequest="40"
+                HeightRequest="40"
+                Margin="0,40,25,0"
+                BorderColor="White"
+                Source="profile.png"
+                Aspect="AspectFit"
+                BackgroundColor="#e67e22"/>
+
+            <Frame
+                Grid.Row="1"
+                Margin="20,20,20,0"
                 OutlineColor="#bdc3c7"
                 Padding="0"
                 HasShadow="false">
@@ -102,7 +115,7 @@
             </Frame>
 
             <Frame
-                Grid.Row="2"
+                Grid.Row="3"
                 Margin="20,0,20,0"
                 OutlineColor="#bdc3c7"
                 Padding="0"
@@ -227,7 +240,7 @@
             </Frame>
 
             <Frame
-                Grid.Row="3"
+                Grid.Row="4"
                 Margin="20,0,20,0"
                 OutlineColor="#bdc3c7"
                 Padding="0"
@@ -312,7 +325,7 @@
             </Frame>
 
             <StackLayout
-                Grid.Row="4"
+                Grid.Row="5"
                 Spacing="0">
 
                 <Button

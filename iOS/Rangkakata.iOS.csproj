@@ -196,6 +196,7 @@
     <BundleResource Include="Resources\budgeticon.png" />
     <BundleResource Include="Resources\dropdownicon.png" />
     <BundleResource Include="Resources\visacard.png" />
+    <BundleResource Include="Resources\profile.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

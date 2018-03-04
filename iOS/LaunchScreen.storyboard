@@ -41,6 +41,9 @@
         <image name="bourbon.jpg" width="1680" height="1050"/>
         <image name="uparrow.png" width="484" height="303"/>
         <image name="logo.png" width="1024" height="1024"/>
-        <image name="tzaneennkowankowa.png" width="1654" height="1654"/>
+        <image name="quickicon.png" width="550" height="364"/>
+        <image name="budgeticon.png" width="591" height="474"/>
+        <image name="dropdownicon.png" width="542" height="542"/>
+        <image name="visacard.png" width="102" height="102"/>
     </resources>
 </document>
