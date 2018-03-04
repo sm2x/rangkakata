@@ -10,6 +10,10 @@ namespace Rangkakata.ViewModels.Core
 
         Task PopAsync(bool isAnimated = true);
 
+        Task PopModalAsync(bool isAnimated = true);
+
         Task PushAsync(Page page, bool isAnimated = true);
+
+        Task PushModalAsync(Page page, bool isAnimated = true);
     }
 }

@@ -16,9 +16,19 @@ namespace Rangkakata.ViewModels.Core
             await Application.Current.MainPage.Navigation.PopAsync(isAnimated);
         }
 
+        public async Task PopModalAsync(bool isAnimated = true)
+        {
+            await Application.Current.MainPage.Navigation.PopModalAsync(isAnimated);
+        }
+
         public async Task PushAsync(Page page, bool isAnimated = true)
         {
             await Application.Current.MainPage.Navigation.PushAsync(page, isAnimated);
+        }
+
+        public async Task PushModalAsync(Page page, bool isAnimated = true)
+        {
+            await Application.Current.MainPage.Navigation.PushModalAsync(page, isAnimated);
         }
     }
 }

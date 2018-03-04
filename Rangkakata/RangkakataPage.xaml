@@ -342,7 +342,8 @@
                     FontAttributes="Bold"
                     TextColor="White"
                     Margin="20,5,20,40"
-                    Text="CONTINUE" />
+                    Text="CONTINUE"
+                    Command="{Binding GoToMatchCommand}"/>
 
             </StackLayout>
 

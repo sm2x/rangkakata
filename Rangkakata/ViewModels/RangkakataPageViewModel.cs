@@ -11,18 +11,20 @@ namespace Rangkakata.ViewModels
 {
     public class RangkakataPageViewModel : BaseViewModel
     {
-        
+
         private readonly IPageService _pageService;
 
         public ICommand GoToProfileCommand { get; private set; }
+        public ICommand GoToMatchCommand { get; private set; }
         public ICommand GoToSearchLocationCommand { get; private set; }
 
         public RangkakataPageViewModel(IPageService pageService)
         {
-            
+
             _pageService = pageService;
 
             GoToProfileCommand = new Command(async () => await GoToProfile());
+            GoToMatchCommand = new Command(async () => await GoToMatch());
             GoToSearchLocationCommand = new Command(async obj => await GoToSearchLocation(obj));
 
         }
@@ -30,6 +32,11 @@ namespace Rangkakata.ViewModels
         private async Task GoToProfile()
         {
             await _pageService.PushAsync(new ProfilePage());
+        }
+
+        private async Task GoToMatch()
+        {
+            await _pageService.PushModalAsync(new MatchPage(), false);
         }
 
         private async Task GoToSearchLocation(Object obj)
