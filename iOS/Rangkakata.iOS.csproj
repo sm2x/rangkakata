@@ -145,6 +145,9 @@
     <Reference Include="PropertyChanged">
       <HintPath>..\packages\PropertyChanged.Fody.2.2.9\lib\netstandard1.0\PropertyChanged.dll</HintPath>
     </Reference>
+    <Reference Include="Xamanimation">
+      <HintPath>..\packages\Xamanimation.1.1.0\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamanimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rangkakata\Rangkakata.csproj">

@@ -3,8 +3,19 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Rangkakata.Pages.MatchPage"
+    xmlns:Animations="clr-namespace:Xamanimation;assembly=Xamanimation"
+    xmlns:ImageCircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     NavigationPage.HasNavigationBar="false"
     BackgroundImage="bourbon.jpg">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Animations:FadeToAnimation
+                 x:Key="JumpAnimation"
+                 Target="{x:Reference DriverImage}"
+                 Duration="2000" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     
 	<ContentPage.Content>
 
@@ -15,16 +26,198 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Button
+            <ImageCircle:CircleImage
+                Grid.Row="0"
+                x:Name="DriverImage"
+                HorizontalOptions="Center"
+                BorderThickness="3"
+                Margin="40,40,40,0"
+                BorderColor="White"
+                Source="profile.png"
+                Aspect="AspectFit"
+                BackgroundColor="#e67e22" />
+
+            <Label
                 Grid.Row="1"
-                TextColor="Black"
+                HorizontalOptions="Center"
+                Margin="30"
+                TextColor="White"
                 FontAttributes="Bold"
-                BackgroundColor="#ecf0f1"
-                Margin="20,5,20,40"
-                Command="{Binding CancelCommand}"
-                Text="CANCEL" />
+                Text="Tap Your Phone To Make Payment"/>
+
+            <Frame
+                Grid.Row="2"
+                Margin="20,0,20,15"
+                OutlineColor="#bdc3c7"
+                Padding="0"
+                HasShadow="false">
+                
+                <Grid
+                    RowSpacing="0"
+                    ColumnSpacing="0">
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="55" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="18"
+                        Source="quickicon.png" />
+
+                    <StackLayout
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        Padding="0,10,0,10"
+                        Spacing="0"
+                        Orientation="Vertical">
+
+                        <Label
+                            Text="Fastest"
+                            FontSize="Small"
+                            FontAttributes="Bold"/>
+
+                        <Label
+                            Text="3 Stops"
+                            TextColor="Gray"
+                            FontSize="Small"/>
+
+                    </StackLayout>
+
+                    <StackLayout
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Padding="0,10,0,10"
+                        Spacing="0"
+                        Orientation="Vertical">
+
+                        <Label
+                            Text="R300"
+                            HorizontalOptions="Center"
+                            FontSize="Small"
+                            FontAttributes="Bold"/>
+
+                        <Label
+                            Text="10 min"
+                            HorizontalOptions="Center"
+                            TextColor="Gray"
+                            FontSize="Small"/>
+
+                    </StackLayout>
+                    
+                </Grid>
+            </Frame>
+
+            <Frame
+                Grid.Row="3"
+                Margin="20,0,20,10"
+                OutlineColor="#bdc3c7"
+                Padding="0"
+                HasShadow="false">
+                
+                <Grid
+                    RowSpacing="0"
+                    ColumnSpacing="0">
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="76" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout
+                        Grid.Row="0"
+                        Padding="20,10,0,0"
+                        Spacing="0"
+                        Orientation="Vertical">
+
+                        <Label
+                            Text="Trip to Noord Taxi Rank"
+                            Margin="0,0,0,5"
+                            FontSize="Small"
+                            FontAttributes="Bold"/>
+
+                        <Label
+                            Text="90 Plein"
+                            TextColor="Gray"
+                            FontSize="Small"/>
+
+                        <Label
+                            Text="Johannesburg"
+                            TextColor="Gray"
+                            FontSize="Small"/>
+
+                    </StackLayout>
+
+                    <BoxView
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        HeightRequest="1"
+                        BackgroundColor="#ecf0f1" />
+
+                    <StackLayout
+                        Grid.Row="2"
+                        Grid.ColumnSpan="2"
+                        Spacing="0"
+                        Margin="0,8,0,8"
+                        Orientation="Horizontal">
+
+                        <Image
+                            HeightRequest="40"
+                            Margin="15,0,10,0"
+                            Source="visacard.png" />
+
+                        <StackLayout
+                            Spacing="0"
+                            Orientation="Vertical">
+
+                            <Label
+                                FontSize="Micro"
+                                FontAttributes="Bold"
+                                Text="Family &#038; Friends"
+                                Margin="0,4,0,0"/>
+
+                            <Label
+                                FontSize="Micro"
+                                TextColor="Gray"
+                                Text="R400 Credits" />
+
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Grid>
+            </Frame>
+
+            <StackLayout
+                Grid.Row="4"
+                Spacing="0">
+
+                <Button
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    BackgroundColor="#ecf0f1"
+                    Margin="20,5,20,40"
+                    Command="{Binding CancelCommand}"
+                    Text="CANCEL" />
+
+            </StackLayout>
 
         </Grid>
 

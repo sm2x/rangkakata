@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/Pages/MatchPage.xaml">
     <Files>
-      <File FileName="Rangkakata/Pages/MatchPage.xaml" Line="25" Column="27" />
-      <File FileName="Rangkakata/Pages/ProfilePage.xaml.cs" Line="22" Column="9" />
+      <File FileName="Rangkakata/Pages/MatchPage.xaml" Line="6" Column="49" />
+      <File FileName="Rangkakata/RangkakataPage.xaml" Line="34" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
