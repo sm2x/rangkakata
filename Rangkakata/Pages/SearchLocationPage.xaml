@@ -2,7 +2,72 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="Rangkakata.Pages.SearchLocationPage">
+    x:Class="Rangkakata.Pages.SearchLocationPage"
+    xmlns:Controls="clr-namespace:Rangkakata.Controls;assembly=Rangkakata"
+    NavigationPage.HasNavigationBar="false">
+    
 	<ContentPage.Content>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image
+                Grid.Row="0"
+                WidthRequest="30"
+                HeightRequest="30"
+                Margin="15,50,0,20"
+                Source="backarrow.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="BackOnTapGestureRecognizerTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Controls:RanEntry
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                TextColor="Black"
+                BackgroundColor="#ecf0f1"
+                Margin="10,0,10,0"
+                HeightRequest="40"
+                Placeholder="Departure" />
+
+            <Controls:RanEntry
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                TextColor="Black"
+                BackgroundColor="#ecf0f1"
+                Margin="10,0,10,0"
+                HeightRequest="40"
+                Placeholder="Destination" />
+
+            <BoxView
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                HeightRequest="1"
+                Margin="0, 15"
+                BackgroundColor="#ecf0f1" />
+
+            <ListView
+                Grid.Row="4"
+                Grid.ColumnSpan="2"
+                SeparatorVisibility="None" />
+            
+        </Grid>
+        
 	</ContentPage.Content>
+    
 </ContentPage>

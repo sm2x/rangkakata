@@ -1,15 +1,8 @@
 ﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/ViewModels/SearchLocationPageViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/Pages/SearchLocationPage.xaml">
     <Files>
-      <File FileName="Rangkakata/RangkakataPage.xaml" Line="108" Column="57" />
-      <File FileName="Rangkakata/RangkakataPage.xaml.cs" Line="17" Column="13" />
-      <File FileName="Rangkakata/ViewModels/RangkakataPageViewModel.cs" Line="52" Column="1" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="Rangkakata/App.xaml" Line="6" Column="15" />
-      <File FileName="Rangkakata/App.xaml.cs" Line="15" Column="64" />
-      <File FileName="Rangkakata/Pages/SearchLocationPage.xaml" Line="5" Column="5" />
-      <File FileName="Rangkakata/Pages/SearchLocationPage.xaml.cs" Line="13" Column="56" />
-      <File FileName="Rangkakata/ViewModels/SearchLocationPageViewModel.cs" Line="14" Column="10" />
+      <File FileName="Rangkakata/ViewModels/SearchLocationPageViewModel.cs" Line="31" Column="1" />
+      <File FileName="Rangkakata/Pages/SearchLocationPage.xaml" Line="69" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,15 +10,18 @@
           <Node name="Rangkakata" expanded="True">
             <Node name="Rangkakata" expanded="True">
               <Node name="Pages" expanded="True">
-                <Node name="SearchLocationPage.xaml" expanded="True" />
+                <Node name="SearchLocationPage.xaml" expanded="True" selected="True" />
               </Node>
               <Node name="ViewModels" expanded="True">
-                <Node name="SearchLocationPageViewModel.cs" selected="True" />
+                <Node name="Core" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
               <Node name="RangkakataPage.xaml" expanded="True" />
             </Node>
             <Node name="Rangkakata.Droid" expanded="True" />
-            <Node name="Rangkakata.iOS" expanded="True" />
+            <Node name="Rangkakata.iOS" expanded="True">
+              <Node name="Renderers" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -36,7 +32,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.509EFE85-736B-418E-BFDE-BFD263BCBC56" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FC9D6267-A502-4F00-A48A-485A8FBD5813" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Rangkakata.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>

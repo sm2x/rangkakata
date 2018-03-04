@@ -8,11 +8,21 @@ namespace Rangkakata.Pages
 {
     public partial class SearchLocationPage : ContentPage
     {
+
+        public SearchLocationPage()
+        {
+            InitializeComponent();
+        }
         
         public SearchLocationPage(String location)
         {
             ViewModel = new SearchLocationPageViewModel(new PageService());
             InitializeComponent();
+        }
+
+        void BackOnTapGestureRecognizerTapped(object sender, System.EventArgs e)
+        {
+            ViewModel.GoBackToHomeCommand.Execute(null);
         }
 
         public SearchLocationPageViewModel ViewModel

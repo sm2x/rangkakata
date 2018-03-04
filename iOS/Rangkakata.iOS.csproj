@@ -202,6 +202,7 @@
     <BundleResource Include="Resources\dropdownicon.png" />
     <BundleResource Include="Resources\visacard.png" />
     <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\backarrow.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

@@ -11,6 +11,11 @@ namespace Rangkakata.ViewModels.Core
             return await Application.Current.MainPage.DisplayAlert(title, message, ok, cancel);
         }
 
+        public async Task PopAsync(bool isAnimated = true)
+        {
+            await Application.Current.MainPage.Navigation.PopAsync(isAnimated);
+        }
+
         public async Task PushAsync(Page page, bool isAnimated = true)
         {
             await Application.Current.MainPage.Navigation.PushAsync(page, isAnimated);

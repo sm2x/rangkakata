@@ -221,6 +221,7 @@
     <AndroidResource Include="Resources\drawable\dropdownicon.png" />
     <AndroidResource Include="Resources\drawable\visacard.png" />
     <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\backarrow.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

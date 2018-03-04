@@ -8,6 +8,8 @@ namespace Rangkakata.ViewModels.Core
     {
         Task<bool> DisplayAlert(string title, string message, string ok, string cancel);
 
+        Task PopAsync(bool isAnimated = true);
+
         Task PushAsync(Page page, bool isAnimated = true);
     }
 }

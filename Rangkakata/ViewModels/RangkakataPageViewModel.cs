@@ -39,11 +39,11 @@ namespace Rangkakata.ViewModels
 
             if (point.Equals("Departure"))
             {
-                await _pageService.PushAsync(new SearchLocationPage(point), false);
+                await _pageService.PushAsync(new SearchLocationPage(point));
             }
             else if (point.Equals("Destination"))
             {
-                await _pageService.PushAsync(new SearchLocationPage(point), false);
+                await _pageService.PushAsync(new SearchLocationPage(point));
             }
         }
 

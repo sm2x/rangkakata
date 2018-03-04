@@ -1,4 +1,5 @@
 ﻿using System;
+using CoreGraphics;
 using Rangkakata.Controls;
 using Rangkakata.iOS.Renderers;
 using UIKit;
@@ -17,6 +18,12 @@ namespace Rangkakata.iOS.Renderers
             if (Control != null)
             {
                 Control.BorderStyle = UITextBorderStyle.None;
+
+                Control.LeftView = new UIView(new CGRect(0, 0, 15, 0));
+                Control.LeftViewMode = UITextFieldViewMode.Always;
+                Control.RightView = new UIView(new CGRect(0, 0, 15, 0));
+                Control.RightViewMode = UITextFieldViewMode.Always;
+
             }
         }
     }
