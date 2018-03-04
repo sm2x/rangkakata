@@ -213,6 +213,8 @@
     <AndroidResource Include="Resources\drawable\logo.png" />
     <AndroidResource Include="Resources\drawable\quickicon.png" />
     <AndroidResource Include="Resources\drawable\budgeticon.png" />
+    <AndroidResource Include="Resources\drawable\dropdownicon.png" />
+    <AndroidResource Include="Resources\drawable\visacard.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
