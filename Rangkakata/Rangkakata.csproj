@@ -61,6 +61,7 @@
     <Compile Include="ViewModels\SearchLocationPageViewModel.cs" />
     <Compile Include="Model\SearchLocation.cs" />
     <Compile Include="Model\Core\BaseModel.cs" />
+    <Compile Include="ViewModels\ProfilePageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

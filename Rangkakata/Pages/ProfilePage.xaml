@@ -1,5 +1,262 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Rangkakata.Pages.ProfilePage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Rangkakata.Pages.ProfilePage"
+    NavigationPage.HasNavigationBar="false">
+    
 	<ContentPage.Content>
+
+        <Grid
+            RowSpacing="0"
+            ColumnSpacing="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image
+                Grid.Row="0"
+                WidthRequest="25"
+                Margin="15,60,0,20"
+                Source="backarrow.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="BackOnTapGestureRecognizerTapped"
+                        NumberOfTapsRequired="1" />
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="PROFILE"
+                Margin="15,60,10,20"
+                FontAttributes="Bold"
+                HorizontalOptions="End"/>
+
+            <TableView 
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                Intent="Form" 
+                HasUnevenRows="true">
+                
+                <TableRoot>
+                    
+                    <TableSection 
+                        Title="">
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Label
+                                    Grid.Row="0"
+                                    Text="First Name"
+                                    Margin="20,10,20,5"
+                                    TextColor="Gray" />
+                                
+                                <Label
+                                    Grid.Row="1"
+                                    Text="Mazi"
+                                    Margin="20,0,20,10" />
+                                
+                            </Grid>
+                        </ViewCell>
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Last Name"
+                                    Margin="20,10,20,5"
+                                    TextColor="Gray" />
+                                
+                                <Label
+                                    Grid.Row="1"
+                                    Text="Muhlari"
+                                    Margin="20,0,20,10" />
+                                
+                            </Grid>
+                        </ViewCell>
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Phone Number"
+                                    Margin="20,10,20,5"
+                                    TextColor="Gray" />
+                                
+                                <Label
+                                    Grid.Row="1"
+                                    Text="0726422105"
+                                    Margin="20,0,20,10" />
+                                
+                            </Grid>
+                        </ViewCell>
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Email"
+                                    Margin="20,10,20,5"
+                                    TextColor="Gray" />
+                                
+                                <Label
+                                    Grid.Row="1"
+                                    Text="mazi.muhlari@gmail.com"
+                                    Margin="20,0,20,10" />
+                                
+                            </Grid>
+                        </ViewCell>
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Password"
+                                    Margin="20,10,20,5"
+                                    TextColor="Gray" />
+                                
+                                <Label
+                                    Grid.Row="1"
+                                    Text="**********"
+                                    Margin="20,0,20,10" />
+                                
+                            </Grid>
+                        </ViewCell>
+                        
+                    </TableSection>
+
+                    <TableSection 
+                        Title="">
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Payments"
+                                    Margin="20,20,20,20" />
+                                
+                            </Grid>
+                        </ViewCell>
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Trips"
+                                    Margin="20,20,20,20" />
+                                
+                            </Grid>
+                        </ViewCell>
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                
+                                <Label
+                                    Grid.Row="0"
+                                    Text="Help"
+                                    Margin="20,20,20,20" />
+                                
+                            </Grid>
+                        </ViewCell>
+                        
+                    </TableSection>
+
+                    <TableSection 
+                        Title="">
+
+                        <ViewCell>
+                            <Grid
+                                RowSpacing="0"
+                                ColumnSpacing="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Text="Build"
+                                    TextColor="Gray"
+                                    Margin="20,20,20,20" />
+
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    HorizontalOptions="End"
+                                    Text="v0.0.1"
+                                    TextColor="Gray"
+                                    Margin="20,20,20,20" />
+                                
+                            </Grid>
+                        </ViewCell>
+                        
+                    </TableSection>
+                    
+                </TableRoot>
+            </TableView>
+            
+        </Grid>
+        
 	</ContentPage.Content>
+    
 </ContentPage>
