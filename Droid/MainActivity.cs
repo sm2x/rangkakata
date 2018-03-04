@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using ImageCircle.Forms.Plugin.Droid;
+using Plugin.Permissions;
 
 namespace Rangkakata.Droid
 {
@@ -25,7 +26,16 @@ namespace Rangkakata.Droid
 
             ImageCircleRenderer.Init();
 
+            Xamarin.FormsMaps.Init(this, bundle);
+
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
+
             LoadApplication(new App());
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        {
+            Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

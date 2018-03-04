@@ -5,39 +5,32 @@
     xmlns:local="clr-namespace:Rangkakata" 
     xmlns:Controls="clr-namespace:Rangkakata.Controls;assembly=Rangkakata"
     xmlns:ImageCircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-    x:Class="Rangkakata.RangkakataPage"
-    BackgroundImage="bourbon.jpg">
+    xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    x:Class="Rangkakata.RangkakataPage">
 
-    <StackLayout
-        Padding="0"
-        Orientation="Vertical">
-        
-        <Grid>
+    <AbsoluteLayout>
+
+        <Maps:Map 
+            x:Name="HomeMap"
+            IsShowingUser="true"
+            MapType="Street"
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All"/>
+
+        <Grid
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="70" />
             </Grid.RowDefinitions>
 
-            <Image
-                Grid.Row="0"
-                HeightRequest="50"
-                WidthRequest="50"
-                Source="logo.png">
-                <Image.Margin>
-                    <OnPlatform x:TypeArguments="Thickness">
-                        <On Platform="iOS" Value="0, 30, 0, 0" />
-                        <On Platform="Android" Value="10" />
-                    </OnPlatform>
-                </Image.Margin>
-            </Image>
-
             <Frame
-                Grid.Row="1"
-                Margin="20"
-                OutlineColor="#ecf0f1"
+                Grid.Row="0"
+                Margin="20,60,20,0"
+                OutlineColor="#bdc3c7"
                 Padding="0"
                 HasShadow="false">
                 
@@ -107,24 +100,20 @@
             </Frame>
 
             <StackLayout
-                Grid.Row="2">
+                Grid.Row="2"
+                Spacing="0">
 
-                <ImageCircle:CircleImage
-                    Margin="30"
-                    Source="tzaneennkowankowa.png" 
-                    Aspect="AspectFit"
-                    BorderColor="#bb5149"
-                    BorderThickness="10" />
+                <Button
+                    BackgroundColor="#ec6f66"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    Margin="20,0,20,40"
+                    Text="CONTINUE" />
 
             </StackLayout>
 
-            <Image
-                Grid.Row="3"
-                Margin="30"
-                Source="uparrow.png" />
-
         </Grid>
-
-    </StackLayout>
+        
+    </AbsoluteLayout>
     
 </ContentPage>
