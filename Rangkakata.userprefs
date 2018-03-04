@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/RangkakataPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/LaunchScreen.storyboard">
     <Files>
-      <File FileName="Droid/SplashActivity.cs" Line="16" Column="9" />
-      <File FileName="Droid/Resources/drawable/splash_screen.xml" Line="1" Column="1" />
+      <File FileName="Rangkakata/RangkakataPage.xaml" Line="114" Column="36" />
       <File FileName="iOS/Info.plist" />
-      <File FileName="../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.1.5-0/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1122" Column="2" />
-      <File FileName="Droid/Resources/values/styles.xml" Line="7" Column="33" />
-      <File FileName="Rangkakata/App.xaml" Line="6" Column="15" />
-      <File FileName="Rangkakata/RangkakataPage.xaml" Line="7" Column="19" />
+      <File FileName="iOS/LaunchScreen.storyboard" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -15,7 +11,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.509EFE85-736B-418E-BFDE-BFD263BCBC56" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FC9D6267-A502-4F00-A48A-485A8FBD5813" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Rangkakata.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>

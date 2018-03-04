@@ -151,17 +151,6 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\128.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\256.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\512.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-750x1334.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-1242x2208.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-2048x2732.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-640x960.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-640x1136.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-768x1024.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-1536x2048.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-320x480.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-768x1004.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\splash-1536x2008.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -185,7 +174,10 @@
     <BundleResource Include="Resources\bourbon.jpg" />
     <BundleResource Include="Resources\uparrow.png" />
     <BundleResource Include="Resources\logo.png" />
-    <BundleResource Include="Resources\tzaneen-nkowankowa.png" />
+    <BundleResource Include="Resources\tzaneennkowankowa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />

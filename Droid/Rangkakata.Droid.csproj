@@ -176,7 +176,7 @@
     <AndroidResource Include="Resources\drawable\bourbon.jpg" />
     <AndroidResource Include="Resources\drawable\uparrow.png" />
     <AndroidResource Include="Resources\drawable\logo.png" />
-    <AndroidResource Include="Resources\drawable\tzaneen-nkowankowa.png" />
+    <AndroidResource Include="Resources\drawable\tzaneennkowankowa.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
