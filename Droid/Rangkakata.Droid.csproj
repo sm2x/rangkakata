@@ -224,6 +224,7 @@
     <AndroidResource Include="Resources\drawable\backarrow.png" />
     <AndroidResource Include="Resources\drawable\taxirankicon.png" />
     <AndroidResource Include="Resources\drawable\taxistopicon.png" />
+    <AndroidResource Include="Resources\drawable\rightarrow.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

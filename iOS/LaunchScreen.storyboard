@@ -49,5 +49,6 @@
         <image name="backarrow.png" width="586" height="334"/>
         <image name="taxirankicon.png" width="455" height="396"/>
         <image name="taxistopicon.png" width="234" height="509"/>
+        <image name="rightarrow.png" width="361" height="517"/>
     </resources>
 </document>
