@@ -192,6 +192,8 @@
     <BundleResource Include="Resources\bourbon.jpg" />
     <BundleResource Include="Resources\uparrow.png" />
     <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\quickicon.png" />
+    <BundleResource Include="Resources\budgeticon.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
