@@ -1,14 +1,17 @@
 ﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/Pages/SearchLocationPage.xaml">
     <Files>
-      <File FileName="Rangkakata/ViewModels/SearchLocationPageViewModel.cs" Line="31" Column="1" />
-      <File FileName="Rangkakata/Pages/SearchLocationPage.xaml" Line="69" Column="1" />
+      <File FileName="Rangkakata/Pages/SearchLocationPage.xaml" Line="37" Column="28" />
+      <File FileName="iOS/LaunchScreen.storyboard" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Rangkakata" expanded="True">
             <Node name="Rangkakata" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="Core" expanded="True" />
+              </Node>
               <Node name="Pages" expanded="True">
                 <Node name="SearchLocationPage.xaml" expanded="True" selected="True" />
               </Node>
@@ -18,21 +21,26 @@
               <Node name="App.xaml" expanded="True" />
               <Node name="RangkakataPage.xaml" expanded="True" />
             </Node>
-            <Node name="Rangkakata.Droid" expanded="True" />
+            <Node name="Rangkakata.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
             <Node name="Rangkakata.iOS" expanded="True">
               <Node name="Renderers" expanded="True" />
+              <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FC9D6267-A502-4F00-A48A-485A8FBD5813" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.9ecdf392f5229b1544414a9af823a2f930b3c106" automaticSigning="False" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Rangkakata.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
 </Properties>

@@ -222,6 +222,8 @@
     <AndroidResource Include="Resources\drawable\visacard.png" />
     <AndroidResource Include="Resources\drawable\profile.png" />
     <AndroidResource Include="Resources\drawable\backarrow.png" />
+    <AndroidResource Include="Resources\drawable\taxirankicon.png" />
+    <AndroidResource Include="Resources\drawable\taxistopicon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

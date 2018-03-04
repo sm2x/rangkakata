@@ -13,7 +13,7 @@ namespace Rangkakata.Pages
         {
             InitializeComponent();
         }
-        
+
         public SearchLocationPage(String location)
         {
             ViewModel = new SearchLocationPageViewModel(new PageService());
@@ -23,6 +23,24 @@ namespace Rangkakata.Pages
         void BackOnTapGestureRecognizerTapped(object sender, System.EventArgs e)
         {
             ViewModel.GoBackToHomeCommand.Execute(null);
+        }
+
+
+        void DepartureEntryTextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            String text = e.NewTextValue;
+            ViewModel.Departure = text;
+        }
+
+        void DestinationEntryTextChanged(object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            String text = e.NewTextValue;
+            ViewModel.Destination = text;
+        }
+
+        void SearchLocationListViewItemSelected(object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
+        {
+            SearchLocationItemsListView.SelectedItem = null;
         }
 
         public SearchLocationPageViewModel ViewModel

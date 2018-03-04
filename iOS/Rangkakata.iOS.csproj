@@ -203,6 +203,8 @@
     <BundleResource Include="Resources\visacard.png" />
     <BundleResource Include="Resources\profile.png" />
     <BundleResource Include="Resources\backarrow.png" />
+    <BundleResource Include="Resources\taxirankicon.png" />
+    <BundleResource Include="Resources\taxistopicon.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

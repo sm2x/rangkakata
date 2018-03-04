@@ -1,10 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
+
 namespace Rangkakata.Model.Core
 {
-    public class BaseModel
+    public class BaseModel : INotifyPropertyChanged
     {
-        public BaseModel()
-        {
-        }
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

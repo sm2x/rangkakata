@@ -59,6 +59,8 @@
       <DependentUpon>SearchLocationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\SearchLocationPageViewModel.cs" />
+    <Compile Include="Model\SearchLocation.cs" />
+    <Compile Include="Model\Core\BaseModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -112,6 +114,8 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Pages\" />
     <Folder Include="ViewModels\Core\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\Core\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml">
