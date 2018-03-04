@@ -1,0 +1,10 @@
+﻿using System;
+namespace Rangkakata
+{
+	public class FodyWeavers
+	{
+		public FodyWeavers()
+		{
+		}
+	}
+}
