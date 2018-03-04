@@ -12,7 +12,7 @@ namespace Rangkakata
         {
             InitializeComponent();
 
-            MainPage = new RangkakataPage();
+            MainPage = new NavigationPage(new RangkakataPage());
         }
 
         protected override void OnStart()

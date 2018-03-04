@@ -1,10 +1,16 @@
 ﻿using System;
+using Rangkakata.ViewModels.Core;
+
 namespace Rangkakata.ViewModels
 {
-    public class SearchLocationPageViewModel
+    public class SearchLocationPageViewModel : BaseViewModel
     {
-        public SearchLocationPageViewModel()
+        
+        private readonly IPageService _pageService;
+
+        public SearchLocationPageViewModel(IPageService pageService)
         {
+            _pageService = pageService;
         }
     }
 }

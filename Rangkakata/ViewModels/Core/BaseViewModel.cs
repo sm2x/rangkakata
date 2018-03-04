@@ -1,10 +1,10 @@
 ﻿using System;
+using System.ComponentModel;
+
 namespace Rangkakata.ViewModels.Core
 {
-    public class BaseViewModel
+    public class BaseViewModel : INotifyPropertyChanged
     {
-        public BaseViewModel()
-        {
-        }
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

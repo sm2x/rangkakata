@@ -1,10 +1,4 @@
-﻿using System;
-namespace Rangkakata
-{
-	public class FodyWeavers
-	{
-		public FodyWeavers()
-		{
-		}
-	}
-}
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Weavers>
+  <PropertyChanged/>
+</Weavers>

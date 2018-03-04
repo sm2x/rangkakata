@@ -3,6 +3,8 @@ using System.Diagnostics;
 using Plugin.Geolocator;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
+using Rangkakata.ViewModels;
+using Rangkakata.ViewModels.Core;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -12,12 +14,30 @@ namespace Rangkakata
     {
         public RangkakataPage()
         {
+            ViewModel = new RangkakataPageViewModel(new PageService());
             InitializeComponent();
+
+            InitialiseMap();
+
         }
 
-        protected async override void OnAppearing()
+        void ProfileOnTapGestureRecognizerTapped(object sender, System.EventArgs e)
         {
-            base.OnAppearing();
+            ViewModel.GoToProfileCommand.Execute(null);
+        }
+
+        void DepartureEntryFocused(object sender, Xamarin.Forms.FocusEventArgs e)
+        {
+            ViewModel.GoToSearchLocationCommand.Execute("Departure");
+        }
+
+        void DestinationEntryFocused(object sender, Xamarin.Forms.FocusEventArgs e)
+        {
+            ViewModel.GoToSearchLocationCommand.Execute("Destination");
+        }
+
+        private async void InitialiseMap()
+        {
 
             try
             {
@@ -61,6 +81,12 @@ namespace Rangkakata
                 Debug.WriteLine("Error: " + ex);
             }
 
+        }
+
+        public RangkakataPageViewModel ViewModel
+        {
+            get { return BindingContext as RangkakataPageViewModel; }
+            set { BindingContext = value; }
         }
     }
 }

@@ -1,10 +1,37 @@
 ﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/RangkakataPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/ViewModels/SearchLocationPageViewModel.cs">
     <Files>
-      <File FileName="Rangkakata/RangkakataPage.xaml" Line="42" Column="25" />
+      <File FileName="Rangkakata/RangkakataPage.xaml" Line="108" Column="57" />
+      <File FileName="Rangkakata/RangkakataPage.xaml.cs" Line="17" Column="13" />
+      <File FileName="Rangkakata/ViewModels/RangkakataPageViewModel.cs" Line="52" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Rangkakata/App.xaml" Line="6" Column="15" />
+      <File FileName="Rangkakata/App.xaml.cs" Line="15" Column="64" />
+      <File FileName="Rangkakata/Pages/SearchLocationPage.xaml" Line="5" Column="5" />
+      <File FileName="Rangkakata/Pages/SearchLocationPage.xaml.cs" Line="13" Column="56" />
+      <File FileName="Rangkakata/ViewModels/SearchLocationPageViewModel.cs" Line="14" Column="10" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Rangkakata" expanded="True">
+            <Node name="Rangkakata" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="SearchLocationPage.xaml" expanded="True" />
+              </Node>
+              <Node name="ViewModels" expanded="True">
+                <Node name="SearchLocationPageViewModel.cs" selected="True" />
+              </Node>
+              <Node name="RangkakataPage.xaml" expanded="True" />
+            </Node>
+            <Node name="Rangkakata.Droid" expanded="True" />
+            <Node name="Rangkakata.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
