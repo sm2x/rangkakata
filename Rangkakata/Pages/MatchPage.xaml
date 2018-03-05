@@ -21,16 +21,22 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <ImageCircle:CircleImage
-                Grid.Row="0"
-                x:Name="DriverImage"
-                HorizontalOptions="Center"
-                BorderThickness="3"
-                Margin="40,60,40,0"
-                BorderColor="White"
-                Source="profile.png"
-                Aspect="AspectFit"
-                BackgroundColor="#e67e22" />
+            <StackLayout
+                Spacing="0"
+                Padding="0,60,0,0">
+
+                <ImageCircle:CircleImage
+                    Grid.Row="0"
+                    x:Name="DriverImage"
+                    BorderThickness="3"
+                    HeightRequest="200"
+                    WidthRequest="200"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    BorderColor="White"
+                    Source="profile.png" />
+                
+            </StackLayout>
 
             <Label
                 Grid.Row="1"
