@@ -39,6 +39,8 @@ namespace Rangkakata
         void BeaconTappedOnTapGestureRecognizerTapped(object sender, System.EventArgs e)
         {
             ViewModel.BeaconTapCommand.Execute(null);
+            ViewModel.LoadTripCommand.Execute(null);
+            ViewModel.IsBeaconTapped = true;
         }
 
         private async void InitialiseMap()

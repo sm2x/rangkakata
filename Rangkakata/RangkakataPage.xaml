@@ -295,8 +295,7 @@
                     Margin="20,0,20,0"
                     OutlineColor="#bdc3c7"
                     Padding="0"
-                    HasShadow="false"
-                    IsVisible="{Binding IsDestinationLoaded}">
+                    HasShadow="false">
                     
                     <Grid
                         RowSpacing="0"
@@ -307,8 +306,8 @@
                             Orientation="Horizontal">
 
                             <Image
-                                HeightRequest="50"
-                                Margin="10,10,10,10"
+                                HeightRequest="40"
+                                Margin="15,15,15,15"
                                 Source="{Binding IsBeaconTapped, Converter={StaticResource beaconTappedIconConverter}}"/>
 
                             <StackLayout

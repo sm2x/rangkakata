@@ -11,7 +11,7 @@ namespace Rangkakata.Converters
 
             if (!(bool)value)
             {
-                return "You will need to tap on a sensor or beacon to confirm this trip.";
+                return "You will need to tap on a sensor or beacon to confirm your trip.";
             }
             else
             {
