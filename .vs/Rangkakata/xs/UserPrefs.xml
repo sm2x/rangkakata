@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{24DD4429-E1A7-4CFA-9CBE-93989D5130DE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Rangkakata/Converters/BeaconTappedIconConverter.cs">
+    <Files>
+      <File FileName="Rangkakata/ViewModels/SearchLocationPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="Rangkakata/RangkakataPage.xaml" Line="312" Column="124" />
+      <File FileName="Rangkakata/ViewModels/RangkakataPageViewModel.cs" Line="63" Column="36" />
+      <File FileName="Rangkakata/RangkakataPage.xaml.cs" Line="31" Column="36" />
+      <File FileName="Rangkakata/Converters/BeaconTappedTitleTextConverter.cs" Line="26" Column="6" />
+      <File FileName="Rangkakata/Converters/BeaconTappedIconConverter.cs" Line="14" Column="39" />
+      <File FileName="Rangkakata/Converters/BeaconTappedDescriptionTextConverter.cs" Line="14" Column="73" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Rangkakata.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.509EFE85-736B-418E-BFDE-BFD263BCBC56" automaticSigning="False" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Rangkakata.Droid PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>

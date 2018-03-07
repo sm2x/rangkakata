@@ -228,6 +228,8 @@
     <AndroidResource Include="Resources\drawable\taxirankicon.png" />
     <AndroidResource Include="Resources\drawable\taxistopicon.png" />
     <AndroidResource Include="Resources\drawable\rightarrow.png" />
+    <AndroidResource Include="Resources\drawable\beaconicon.png" />
+    <AndroidResource Include="Resources\drawable\tripconfirmedicon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

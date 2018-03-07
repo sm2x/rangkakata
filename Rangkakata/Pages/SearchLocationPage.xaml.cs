@@ -11,11 +11,6 @@ namespace Rangkakata.Pages
 
         public SearchLocationPage()
         {
-            InitializeComponent();
-        }
-
-        public SearchLocationPage(String location)
-        {
             ViewModel = new SearchLocationPageViewModel(new PageService());
             InitializeComponent();
         }

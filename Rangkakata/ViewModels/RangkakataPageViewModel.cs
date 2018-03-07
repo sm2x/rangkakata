@@ -17,6 +17,11 @@ namespace Rangkakata.ViewModels
         public ICommand GoToProfileCommand { get; private set; }
         public ICommand GoToMatchCommand { get; private set; }
         public ICommand GoToSearchLocationCommand { get; private set; }
+        public ICommand BeaconTapCommand { get; private set; }
+        public ICommand LoadTripCommand { get; private set; }
+
+        public bool IsDestinationLoaded { get; set; }
+        public bool IsBeaconTapped { get; set; }
 
         public RangkakataPageViewModel(IPageService pageService)
         {
@@ -25,7 +30,9 @@ namespace Rangkakata.ViewModels
 
             GoToProfileCommand = new Command(async () => await GoToProfile());
             GoToMatchCommand = new Command(async () => await GoToMatch());
-            GoToSearchLocationCommand = new Command(async obj => await GoToSearchLocation(obj));
+            GoToSearchLocationCommand = new Command(async () => await GoToSearchLocation());
+            BeaconTapCommand = new Command(async () => await BeaconTap());
+            LoadTripCommand = new Command(async () => await LoadTrip());
 
         }
 
@@ -39,19 +46,22 @@ namespace Rangkakata.ViewModels
             await _pageService.PushModalAsync(new MatchPage(), false);
         }
 
-        private async Task GoToSearchLocation(Object obj)
+        private async Task GoToSearchLocation()
         {
+            IsDestinationLoaded = false;
+            IsBeaconTapped = false;
+            await _pageService.PushAsync(new SearchLocationPage());
+        }
 
-            String point = (String)obj;
+        private async Task BeaconTap()
+        {
+            IsBeaconTapped = true;
+        }
 
-            if (point.Equals("Departure"))
-            {
-                await _pageService.PushAsync(new SearchLocationPage(point));
-            }
-            else if (point.Equals("Destination"))
-            {
-                await _pageService.PushAsync(new SearchLocationPage(point));
-            }
+        private async Task LoadTrip()
+        {
+            IsBeaconTapped = false;
+            IsDestinationLoaded = true;
         }
 
     }

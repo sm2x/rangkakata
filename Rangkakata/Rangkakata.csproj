@@ -70,6 +70,12 @@
       <DependentUpon>MatchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\MatchPageViewModel.cs" />
+    <Compile Include="Model\Location.cs" />
+    <Compile Include="Converters\BooleanInverterConverter.cs" />
+    <Compile Include="Converters\BeaconTappedTitleTextConverter.cs" />
+    <Compile Include="Converters\BeaconTappedIsEnabledConverter.cs" />
+    <Compile Include="Converters\BeaconTappedDescriptionTextConverter.cs" />
+    <Compile Include="Converters\BeaconTappedIconConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -128,6 +134,7 @@
     <Folder Include="ViewModels\Core\" />
     <Folder Include="Model\" />
     <Folder Include="Model\Core\" />
+    <Folder Include="Converters\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml">

@@ -1,10 +1,12 @@
 ﻿using System;
+using Rangkakata.Model.Core;
+
 namespace Rangkakata.Model
 {
-    public class Location
+    public class Location : BaseModel
     {
-        public Location()
-        {
-        }
+        public double Longitude { get; set; }
+        public double Latitude { get; set; }
+        public string Address { get; set; }
     }
 }

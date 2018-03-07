@@ -209,6 +209,8 @@
     <BundleResource Include="Resources\taxirankicon.png" />
     <BundleResource Include="Resources\taxistopicon.png" />
     <BundleResource Include="Resources\rightarrow.png" />
+    <BundleResource Include="Resources\beaconicon.png" />
+    <BundleResource Include="Resources\tripconfirmedicon.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

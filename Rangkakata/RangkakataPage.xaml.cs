@@ -26,14 +26,19 @@ namespace Rangkakata
             ViewModel.GoToProfileCommand.Execute(null);
         }
 
-        void DepartureEntryFocused(object sender, Xamarin.Forms.FocusEventArgs e)
+        void DestinationLabelOnTapGestureRecognizerTapped(object sender, System.EventArgs e)
         {
-            ViewModel.GoToSearchLocationCommand.Execute("Departure");
+            ViewModel.GoToSearchLocationCommand.Execute(null);
         }
 
         void DestinationEntryFocused(object sender, Xamarin.Forms.FocusEventArgs e)
         {
-            ViewModel.GoToSearchLocationCommand.Execute("Destination");
+            ViewModel.GoToSearchLocationCommand.Execute(null);
+        }
+
+        void BeaconTappedOnTapGestureRecognizerTapped(object sender, System.EventArgs e)
+        {
+            ViewModel.BeaconTapCommand.Execute(null);
         }
 
         private async void InitialiseMap()

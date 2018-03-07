@@ -4,18 +4,18 @@ using Xamarin.Forms;
 
 namespace Rangkakata.Converters
 {
-    public class BeaconTappedTextConverter : IValueConverter
+    public class BeaconTappedTitleTextConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
 
             if (!(bool)value)
             {
-                return "TAP SENSOR";
+                return "Confirm Trip";
             }
             else
             {
-                return "CONFIRM PAYMENT";
+                return "Trip Confirmed";
             }
         }
 
