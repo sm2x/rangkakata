@@ -11,7 +11,7 @@ namespace Rangkakata.Converters
 
             if (!(bool)value)
             {
-                return "Hold your phone near the beacon to confirm your trip or tap to enter code.";
+                return "Hold your phone near the beacon to confirm your trip.";
             }
             else
             {

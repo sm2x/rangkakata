@@ -5,6 +5,7 @@ using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Rangkakata.ViewModels;
 using Rangkakata.ViewModels.Core;
+using Xamanimation;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -16,8 +17,8 @@ namespace Rangkakata.Pages
         {
             ViewModel = new HomePageViewModel(new PageService());
             InitializeComponent();
-
             InitialiseMap();
+            AnimateBeaconCard();
 
         }
 
@@ -41,6 +42,21 @@ namespace Rangkakata.Pages
             ViewModel.BeaconTapCommand.Execute(null);
             ViewModel.LoadTripCommand.Execute(null);
             ViewModel.IsBeaconTapped = true;
+        }
+
+        void LoadTripClicked(object sender, System.EventArgs e)
+        {
+            ViewModel.LoadTripCommand.Execute(null);
+            AnimateBeaconCard();
+        }
+
+        void AnimateBeaconCard()
+        {
+            BeaconCard.Animate(new HeartAnimation()
+            {
+                Duration = "800",
+                Easing = EasingType.SpringOut
+            });
         }
 
         private async void InitialiseMap()
