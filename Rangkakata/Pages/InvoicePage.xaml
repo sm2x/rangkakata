@@ -1,5 +1,309 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Rangkakata.Pages.InvoicePage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Rangkakata.Pages.InvoicePage"
+    xmlns:ImageCircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    NavigationPage.HasNavigationBar="false"
+    BackgroundImage="bourbon.jpg">
+    
     <ContentPage.Content>
+
+        <Grid>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Frame
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                Margin="20,60,20,10"
+                OutlineColor="#bdc3c7"
+                Padding="0"
+                HasShadow="false">
+                
+                <Grid
+                    RowSpacing="0"
+                    ColumnSpacing="0">
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.ColumnSpan="2"
+                        Margin="20"
+                        HorizontalOptions="Center"
+                        FontSize="Small"
+                        FontAttributes="Bold"
+                        Text="ORDER RECEIPT" />
+
+                    <BoxView
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        HeightRequest="1"
+                        BackgroundColor="#ecf0f1" />
+
+                    <StackLayout
+                        Grid.Row="2"
+                        Grid.ColumnSpan="2"
+                        Orientation="Horizontal">
+
+                        <ImageCircle:CircleImage
+                            Grid.Row="0"
+                            HorizontalOptions="Start"
+                            BorderThickness="5"
+                            WidthRequest="80"
+                            HeightRequest="80"
+                            Margin="10,12,10,10"
+                            BorderColor="#ecf0f1"
+                            Source="profile.png"
+                            Aspect="AspectFit"
+                            BackgroundColor="#ecf0f1" />
+
+                        <StackLayout
+                            HorizontalOptions="EndAndExpand"
+                            Orientation="Vertical">
+
+                            <Label
+                                Margin="0,20,20,0"
+                                Text="James May"
+                                FontSize="Small"
+                                HorizontalOptions="End"
+                                FontAttributes="Bold" />
+
+                            <Label
+                                Margin="0,0,20,0"
+                                Text="Toyota Corolla"
+                                FontSize="Small"
+                                TextColor="Silver"
+                                HorizontalOptions="End"
+                                FontAttributes="Bold" />
+
+                            <Label
+                                Margin="0,0,20,0"
+                                Text="BZM 993 L"
+                                FontSize="Small"
+                                TextColor="Silver"
+                                HorizontalOptions="End"
+                                FontAttributes="Bold" />
+                            
+                        </StackLayout>
+                        
+                    </StackLayout>
+
+                    <BoxView
+                        Grid.Row="3"
+                        Grid.ColumnSpan="2"
+                        HeightRequest="1"
+                        BackgroundColor="#ecf0f1" />
+
+                    <Label
+                        Grid.Row="4"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Date" />
+
+                    <Label
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        TextColor="Gray"
+                        Text="20 September 2018" />
+
+                    <Label
+                        Grid.Row="5"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Departure" />
+
+                    <Label
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        TextColor="Gray"
+                        Text="Tzaneen" />
+
+                    <Label
+                        Grid.Row="6"
+                        Margin="20,10,20,15"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Destination" />
+
+                    <Label
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        TextColor="Gray"
+                        Text="Noord Taxi Rank" />
+
+                    <BoxView
+                        Grid.Row="7"
+                        Grid.ColumnSpan="2"
+                        HeightRequest="1"
+                        BackgroundColor="#ecf0f1" />
+
+                    <Label
+                        Grid.Row="8"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Trip Fare" />
+
+                    <Label
+                        Grid.Row="8"
+                        Grid.Column="1"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        TextColor="Gray"
+                        Text="R299" />
+
+                    <Label
+                        Grid.Row="9"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Sub Total" />
+
+                    <Label
+                        Grid.Row="9"
+                        Grid.Column="1"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        TextColor="Gray"
+                        Text="R299" />
+
+                    <Label
+                        Grid.Row="10"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Transaction Fee" />
+
+                    <Label
+                        Grid.Row="10"
+                        Grid.Column="1"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        TextColor="Gray"
+                        Text="R1" />
+
+                    <Label
+                        Grid.Row="11"
+                        Margin="20,10,20,15"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        Text="Total" />
+
+                    <Label
+                        Grid.Row="11"
+                        Grid.Column="1"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="20,15,20,0"
+                        FontAttributes="Bold"
+                        FontSize="Small"
+                        TextColor="Gray"
+                        Text="R300" />
+
+                    <BoxView
+                        Grid.Row="12"
+                        Grid.ColumnSpan="2"
+                        HeightRequest="1"
+                        BackgroundColor="#ecf0f1" />
+
+                    <StackLayout
+                        Grid.Row="13"
+                        Spacing="0"
+                        Grid.ColumnSpan="2"
+                        Margin="0,8,0,8"
+                        Orientation="Horizontal">
+
+                        <Image
+                            HeightRequest="40"
+                            Margin="15,0,10,0"
+                            Source="visacard.png" />
+
+                        <StackLayout
+                            Spacing="0"
+                            Orientation="Vertical">
+
+                            <Label
+                                FontSize="Micro"
+                                FontAttributes="Bold"
+                                Text="Family &#038; Friends"
+                                Margin="0,4,0,0"/>
+
+                            <Label
+                                FontSize="Micro"
+                                TextColor="Gray"
+                                Text="R400 Credits" />
+
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Grid>
+            </Frame>
+
+            <StackLayout
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Spacing="0">
+
+                <Button
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    BackgroundColor="#ecf0f1"
+                    Margin="20,5,20,40"
+                    Command="{Binding DoneCommand}"
+                    Text="DONE" />
+
+            </StackLayout>
+            
+        </Grid>
+        
     </ContentPage.Content>
+    
 </ContentPage>

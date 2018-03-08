@@ -3,6 +3,7 @@
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Rangkakata.Pages;
 
 namespace Rangkakata
 {
@@ -12,7 +13,7 @@ namespace Rangkakata
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new RangkakataPage());
+            MainPage = new NavigationPage(new HomePage());
         }
 
         protected override void OnStart()

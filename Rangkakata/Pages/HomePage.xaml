@@ -8,7 +8,7 @@
     xmlns:ImageCircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     xmlns:Maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
     xmlns:Animations="clr-namespace:Xamanimation;assembly=Xamanimation"
-    x:Class="Rangkakata.RangkakataPage"
+    x:Class="Rangkakata.Pages.HomePage"
     NavigationPage.HasNavigationBar="false">
 
     <ContentPage.Resources>
@@ -351,7 +351,7 @@
                         Margin="20,0,20,40"
                         IsVisible="{Binding IsBeaconTapped}"
                         Text="CONFIRM PAYMENT"
-                        Command="{Binding GoToMatchCommand}" />
+                        Command="{Binding GoToInvoiceCommand}" />
 
                 </StackLayout>
 

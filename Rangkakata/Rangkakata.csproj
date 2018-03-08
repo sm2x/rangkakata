@@ -29,7 +29,6 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="RangkakataPage.xaml" />
     <EmbeddedResource Include="Pages\ProfilePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
@@ -38,7 +37,8 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\MatchPage.xaml">
+    <EmbeddedResource Include="Pages\HomePage.xaml" />
+    <EmbeddedResource Include="Pages\InvoicePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -47,12 +47,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RangkakataPage.xaml.cs">
-      <DependentUpon>RangkakataPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\RanEntry.cs" />
-    <Compile Include="ViewModels\RangkakataPageViewModel.cs" />
+    <Compile Include="ViewModels\HomePageViewModel.cs" />
     <Compile Include="ViewModels\Core\BaseViewModel.cs" />
     <Compile Include="ViewModels\Core\IPageService.cs" />
     <Compile Include="ViewModels\Core\PageService.cs" />
@@ -66,16 +63,19 @@
     <Compile Include="Model\SearchLocation.cs" />
     <Compile Include="Model\Core\BaseModel.cs" />
     <Compile Include="ViewModels\ProfilePageViewModel.cs" />
-    <Compile Include="Pages\MatchPage.xaml.cs">
-      <DependentUpon>MatchPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ViewModels\MatchPageViewModel.cs" />
     <Compile Include="Model\Location.cs" />
     <Compile Include="Converters\BooleanInverterConverter.cs" />
     <Compile Include="Converters\BeaconTappedTitleTextConverter.cs" />
     <Compile Include="Converters\BeaconTappedIsEnabledConverter.cs" />
     <Compile Include="Converters\BeaconTappedDescriptionTextConverter.cs" />
     <Compile Include="Converters\BeaconTappedIconConverter.cs" />
+    <Compile Include="Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InvoicePage.xaml.cs">
+      <DependentUpon>InvoicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\InvoicePageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

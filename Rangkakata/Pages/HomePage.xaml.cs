@@ -8,13 +8,13 @@ using Rangkakata.ViewModels.Core;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
-namespace Rangkakata
+namespace Rangkakata.Pages
 {
-    public partial class RangkakataPage : ContentPage
+    public partial class HomePage : ContentPage
     {
-        public RangkakataPage()
+        public HomePage()
         {
-            ViewModel = new RangkakataPageViewModel(new PageService());
+            ViewModel = new HomePageViewModel(new PageService());
             InitializeComponent();
 
             InitialiseMap();
@@ -90,9 +90,9 @@ namespace Rangkakata
 
         }
 
-        public RangkakataPageViewModel ViewModel
+        public HomePageViewModel ViewModel
         {
-            get { return BindingContext as RangkakataPageViewModel; }
+            get { return BindingContext as HomePageViewModel; }
             set { BindingContext = value; }
         }
     }

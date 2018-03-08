@@ -9,13 +9,13 @@ using Xamarin.Forms;
 
 namespace Rangkakata.ViewModels
 {
-    public class RangkakataPageViewModel : BaseViewModel
+    public class HomePageViewModel : BaseViewModel
     {
 
         private readonly IPageService _pageService;
 
         public ICommand GoToProfileCommand { get; private set; }
-        public ICommand GoToMatchCommand { get; private set; }
+        public ICommand GoToInvoiceCommand { get; private set; }
         public ICommand GoToSearchLocationCommand { get; private set; }
         public ICommand BeaconTapCommand { get; private set; }
         public ICommand LoadTripCommand { get; private set; }
@@ -23,13 +23,13 @@ namespace Rangkakata.ViewModels
         public bool IsDestinationLoaded { get; set; }
         public bool IsBeaconTapped { get; set; }
 
-        public RangkakataPageViewModel(IPageService pageService)
+        public HomePageViewModel(IPageService pageService)
         {
 
             _pageService = pageService;
 
             GoToProfileCommand = new Command(async () => await GoToProfile());
-            GoToMatchCommand = new Command(async () => await GoToMatch());
+            GoToInvoiceCommand = new Command(async () => await GoToInvoice());
             GoToSearchLocationCommand = new Command(async () => await GoToSearchLocation());
             BeaconTapCommand = new Command(async () => await BeaconTap());
             LoadTripCommand = new Command(async () => await LoadTrip());
@@ -41,9 +41,9 @@ namespace Rangkakata.ViewModels
             await _pageService.PushAsync(new ProfilePage());
         }
 
-        private async Task GoToMatch()
+        private async Task GoToInvoice()
         {
-            await _pageService.PushModalAsync(new MatchPage(), false);
+            await _pageService.PushModalAsync(new InvoicePage(), false);
         }
 
         private async Task GoToSearchLocation()
