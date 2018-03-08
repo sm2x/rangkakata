@@ -292,7 +292,7 @@
                 <Frame
                     Grid.Row="5"
                     x:Name="BeaconCard"
-                    Margin="20,0,20,0"
+                    Margin="20,0,20,20"
                     OutlineColor="#bdc3c7"
                     Padding="0"
                     HasShadow="false">
@@ -348,7 +348,7 @@
                         BackgroundColor="#ec6f66"
                         FontAttributes="Bold"
                         TextColor="White"
-                        Margin="20,5,20,40"
+                        Margin="20,0,20,40"
                         IsVisible="{Binding IsBeaconTapped}"
                         Text="CONFIRM PAYMENT"
                         Command="{Binding GoToMatchCommand}" />
